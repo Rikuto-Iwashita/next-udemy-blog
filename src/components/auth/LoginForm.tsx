@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useActionState } from 'react';
-import { authenticate } from '@/lib/Actions/authenticate'; 
+import { authenticate } from '@/lib/actions/authenticate'; 
 
 export default function LoginForm() {
   const [errorMessage, formAction] = useActionState(
