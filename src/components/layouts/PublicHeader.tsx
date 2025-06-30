@@ -31,7 +31,7 @@ export default function PublicHeader() {
                 </Button>
                 <Button asChild>
                     <Link href="/register">
-                    検索
+                    登録
                     </Link>
                 </Button>
             </div>
