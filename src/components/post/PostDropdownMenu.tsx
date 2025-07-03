@@ -3,9 +3,10 @@ import {
     DropdownMenuContent,
     DropdownMenuItem,
     DropdownMenuTrigger,
-  } from "@/components/ui/dropdown-menu"
+} from "@/components/ui/dropdown-menu"
+import Link from "next/link"
 
-export default function PostDropdownMenu() {
+export default function PostDropdownMenu({postId}: {postId: string}) {
   return (
     <>
         <DropdownMenu>
