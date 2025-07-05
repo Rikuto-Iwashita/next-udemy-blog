@@ -23,7 +23,7 @@ export async function createPost(
 
     //バリデーション
     const validationResult = postSchema.safeParse({title, content, topImage})
-    if(!validationResult) {
+    if(!validationResult.success) {
         return {success: false, errors: validationResult.error.flatten().fieldErrors}
     }
 
