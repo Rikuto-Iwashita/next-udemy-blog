@@ -29,6 +29,15 @@ export default function CreatePage() {
                 <Input type="text" id="title" name="title" placeholder="タイトルを入力してください" />
             </div>
             <div>
+                <Label htmlFor="topImage">トップ画像</Label>
+                <Input
+                    type="file"
+                    id="topImage"
+                    accept="image/*"
+                    name="topImage"
+                />
+            </div>
+            <div>
                 <Label htmlFor="content">内容(Markdown)</Label>
                 <TextareaAutosize
                 id="content" name="content" className="w-full border p-2" placeholder="Markdown形式で入力してください"
