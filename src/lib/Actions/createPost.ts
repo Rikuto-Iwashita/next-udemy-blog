@@ -22,9 +22,9 @@ export async function createPost(
     const topImage = topImageInput instanceof File ? topImageInput : null
 
     //バリデーション
-    const validationResult = postSchema.safeParse({title, content, topImage})
-    if(!validationResult.success) {
-        return {success: false, errors: validationResult.error.flatten().fieldErrors}
+    const validationResult = postSchema.safeParse({ title, content, topImage})
+    if(!validationResult.success){
+        return { success: false, errors: validationResult.error.flatten().fieldErrors}
     }
 
     //画像保存
